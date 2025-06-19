@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<!--[if IE]><![endif]-->
-<!--[if IE 8 ]><html dir="{{ direction }}" lang="{{ lang }}" class="ie8"><![endif]-->
-<!--[if IE 9 ]><html dir="{{ direction }}" lang="{{ lang }}" class="ie9"><![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!-->
+
 <html dir="{{ direction }}" lang="{{ lang }}">
-<!--<![endif]-->
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -43,6 +38,7 @@
     {{ language }}
     <div id="top-links" class="nav pull-right">
       <ul class="list-inline">
+     <li> <a href="http://diplom/index.php?route=common/home"><i class="fa fa-home"></i></a> </li>
         <li><a href="{{ contact }}"><i class="fa fa-phone"></i></a> <span class="hidden-xs hidden-sm hidden-md">{{ telephone }}</span></li>
         <li class="dropdown"><a href="{{ account }}" title="{{ text_account }}" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <span class="hidden-xs hidden-sm hidden-md">{{ text_account }}</span> <span class="caret"></span></a>
           <ul class="dropdown-menu dropdown-menu-right">
@@ -52,6 +48,7 @@
             <li><a href="{{ transaction }}">{{ text_transaction }}</a></li>
             <li><a href="{{ download }}">{{ text_download }}</a></li>
             <li><a href="{{ logout }}">{{ text_logout }}</a></li>
+            <li><a href="{{ account }}">{{ text_account }}</a></li>
             {% else %}
             <li><a href="{{ register }}">{{ text_register }}</a></li>
             <li><a href="{{ login }}">{{ text_login }}</a></li>
@@ -64,6 +61,7 @@
       </ul>
     </div>
   </div>
+  
 </nav>
 <header>
   <div class="container">
